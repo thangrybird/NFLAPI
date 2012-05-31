@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<meta http-equiv="Cache-Control" content="no-cache"/>
+  	<title>Perfect Challenge - Fantasy - NFL.com</title>
+  	<link rel="stylesheet" href="stylesheets/styles.css" type="text/css" media="screen" title="Perfect Challenge" charset="utf-8">
+  </head>
+  <body class="slide picks index">
+    <section id="perfect-challenge" class="app container viewing-perfect-lineup">
+      <section id="my_entry" class="entry bar">
+        <div class="entry content">
+          <div class="entry name-plate">
+            <span class="name-plate column content">
+              <span class="column label">Your Entry:</span>
+              <h1 class="column value">--</h1>
+            </span>
+          </div>
+          <div class="entry stats">
+            <span class="stat content">
+              <span class="stat label">Performance:</span>
+              <span class='stat value'>Overall</span>
+            </span>
+            <span id="group_status" class="stat content">
+              <span class='stat label'>+Group</span>
+            </span>
+            <span class="stat content">
+              <span class="stat label">Rank:</span>
+              <span class="stat value">--</span>
+            </span>
+            <span class="stat content">
+              <span class="stat label">Score:</span>
+              <span class="stat value">--</span>
+            </span>
+          </div>
+        </div>
+      </section>
+      <div id="field" class="app stage">
+        <div class="stage plane"></div>
+        <div class="stag bg"></div>
+        <div id="my_picks" class="picks container">
+          <ul>
+            <li data-position-id="1" data-slot-id="1" class="picks slot prop empty"></li>
+            <li data-position-id="2" data-slot-id="2" class="picks slot prop empty"></li>
+            <li data-position-id="2" data-slot-id="3" class="picks slot prop empty"></li>
+            <li data-position-id="3" data-slot-id="4" class="picks slot prop empty"></li>
+            <li data-position-id="3" data-slot-id="5" class="picks slot prop empty"></li>
+            <li data-position-id="4" data-slot-id="6" class="picks slot prop empty"></li>
+            <li data-position-id="6" data-slot-id="7" class="picks slot prop empty"></li>
+            <li data-position-id="5" data-slot-id="8" class="picks slot prop empty"></li>
+          </ul>
+        </div>
+        <div id="leaders" class="leaders">
+        </div>
+      </div>
+      <nav id="picks_controls" role="complementary" class="app controls">
+        <ul>
+          <li id="picks_week_last" class="control button previous">Previous Week</li>
+          <li id="picks_week_indicator" class="control indicator">
+            <section class="indicator content">
+              <header class="indicator header">
+                <h1>Week 1</h1>
+              </header>
+              <nav class="control toggle-view" role="complementary">
+                <ul>
+                  <li id="toggle_your_entry"><a href="#">Your Entry</a></li>
+                  <li id="toggle_perfect_lineup"><a href="#">Perfect Lineup</a></li>
+                </ul>
+              </nav>
+            </section>
+          </li>
+          <li id="picks_week_next" class="control button next">Next Week</li>
+        </ul>
+      </nav>
+      <div id="results" class="app section"></div>
+    </section>
+    <script src="javascripts/application.js" type="text/javascript"></script>
+    <script src="javascripts/stage.js" type="text/javascript"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event){
+        roster.positions.fill();
+      });
+    </script>
+  </body>
+</html>
